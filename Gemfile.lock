@@ -23,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   rack-coffee
   sass
   sinatra
