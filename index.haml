@@ -1,13 +1,19 @@
-!!!  5
 %html  
-  %head  
-    %title My Sinatra Website  
-    %script{src: "/javascripts/min.js"}
-    %script{src: "/javascripts/script.js"}
-  %body  
-    %h1 Welcome  
-    %p  
-    Welcome to my website made with Sinatra and HAML  
+	%head  
+		%title Forms
+		%link{type: "text/css", rel: "stylesheet", href: "stylesheets/style.sass"}		
+		%script{src: "/javascripts/min.js"}
+		%script{src: "/javascripts/jquery.maskedinput.js"}
+		%script{src: "/javascripts/script.js"}
+	%body  
+		#pagewrap
+			%h1 Welcome  
+			%h3 Fill out the form. 
+			.form_content
+				%h3 Advance Search
+				.name
+					%input.name{:name => "firstname", :type => "text", :placeholder => "First Name"}
+					%input{:name => "lastname", :type => "text", :placeholder => "Last Name"}
 
-
+				%input.phone{:name => "phone_number", :type => "tel", :placeholder => "Phone Number"}
 %html
