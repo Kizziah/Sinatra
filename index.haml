@@ -1,7 +1,7 @@
 %html  
 	%head  
 		%title Forms
-		%link{type: "text/css", rel: "stylesheet", href: "stylesheets/style.sass"}		
+		%link{rel: "stylesheet", href: "stylesheets/style.sass" }		
 		%script{src: "/javascripts/min.js"}
 		%script{src: "/javascripts/jquery.maskedinput.js"}
 		%script{src: "/javascripts/script.js"}
@@ -16,4 +16,10 @@
 					%input{:name => "lastname", :type => "text", :placeholder => "Last Name"}
 
 				%input.phone{:name => "phone_number", :type => "tel", :placeholder => "Phone Number"}
+				%select
+					%option{:value => "healthcare"} Healthcare
+					%option{:value => "education"} Education
+					%option{:value => "it"} IT
+					%option{:value => "marketing"} Marketing
+					%option{:value => "other"} Other
 %html
