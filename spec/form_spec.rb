@@ -1,15 +1,17 @@
 require 'spec_helper'
 
-describe Foobar::Foo do
+describe Form do
   
   def app
-    @app ||= Foobar::Foo
+    @app ||= Form
   end
-
+  
   describe "GET '/'" do
     it "should be successful" do
-      get '/'
-      last_response.should be_ok
+      get '/index.haml'
+      page.should have_content('Welcome')
+
     end
   end
+
 end
